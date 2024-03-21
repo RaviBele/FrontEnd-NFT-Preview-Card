@@ -19,7 +19,7 @@ main {
 
 article {
     font-family: "Outfit", sans-serif;
-    max-width: 375px;
+    max-width: 350px;
     padding: 20px;
     border-radius: 15px;
     background-color: hsl(216, 50%, 16%);
