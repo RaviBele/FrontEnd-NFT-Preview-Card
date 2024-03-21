@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+}
+
+main {
+    height: 100vh;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    font-family: "Outfit", sans-serif;
+    max-width: 375px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: hsl(216, 50%, 16%);
+    animation-name: popuop;
+    animation-duration: 2s;
+}
+
+.image {
+    margin-bottom: 18px;  
+    position: relative;
+    animation-name: popuop;
+    animation-duration: 2s;
+}
+
+.actual-image {
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.actual-image img {
+    width: 100%;
+}
+
+.hover-image {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: hsla(178, 100%, 50%, 0.35);
+    z-index: 1;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hover-image img {
+    width: 20%;
+}
+
+.title {
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+    padding: 8px 0;
+    animation-name: popuop;
+    animation-duration: 2s;
+}
+
+.description {
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    line-height: 25px;
+    padding: 8px 0;
+    font-weight: 300;
+    animation-name: popuop;
+    animation-duration: 2s;
+}
+
+.eth-container {
+    padding: 12px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.eth-price {
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    animation-name: popuop;
+    animation-duration: 2s;
+}
+
+.eth {
+    margin: auto 0;
+    padding: 0 8px;
+    font-size: 18px;
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+.eth-price img {
+    margin: auto 0;
+    width: 0.9rem;
+    height: 1.5rem;
+}
+
+.eth-days {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    animation-name: popuop;
+    animation-duration: 2s;
+}
+
+.days {
+    margin: auto 0;
+    padding: 0 8px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 18px;
+}
+
+hr {
+    margin: 10px 0;
+    border: 0.5px solid hsla(215, 52%, 70%, 0.3);
+    color: hsl(215, 51%, 70%);
+    animation-name: popuop;
+    animation-duration: 2s;
+}
+
+.author-container {
+    margin-top: 10px;
+    padding: 10px 0;
+    display: flex;
+    animation-name: popuop;
+    animation-duration: 2s;
+}
+
+.avatar {
+    width: 2.7rem;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.author {
+    margin: auto 0;
+    padding: 0 15px;
+    color: hsla(215, 52%, 70%);
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.author span {
+    color: white;
+}
+
+.title:hover, .author span:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.image:hover .hover-image {
+    display: flex;
+    cursor: pointer;
+}
+
+
+@keyframes popuop {
+    0% {
+        transform: scale(0) rotate(90deg);
+        color: hsl(178, 100%, 50%);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
