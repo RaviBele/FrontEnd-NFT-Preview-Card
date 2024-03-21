@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/RaviBele/FrontEnd-NFT-Preview-Card)
-- Live Site URL: [Netlify](https://your-live-site-url.com)
+- Live Site URL: [Netlify](https://steady-kitten-122f7d.netlify.app/)
 
 ## My process
 
