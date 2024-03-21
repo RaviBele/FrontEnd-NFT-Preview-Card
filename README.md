@@ -70,7 +70,8 @@ I learnt about how to use position absolute, z-index and css animations using ke
     align-items: center;
 }
 ```
-```@keyframes popuop {
+```css
+@keyframes popuop {
     0% {
         transform: scale(0) rotate(90deg);
         color: hsl(178, 100%, 50%);
